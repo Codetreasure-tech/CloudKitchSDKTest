@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gotham-Book.otf">
+            <string>Gotham-Book</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CusineListViewController" customModule="CloudKitchTestFrameWork" customModuleProvider="target">
+            <connections>
+                <outlet property="table" destination="QQk-yi-O2t" id="9cD-db-mmI"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ohE-ac-JVZ">
+                    <rect key="frame" x="0.0" y="44" width="414" height="51"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f7y-fi-SBI">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pzX-ZA-OL6">
+                                    <rect key="frame" x="8" y="2" width="46" height="46"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="pzX-ZA-OL6" secondAttribute="height" multiplier="1:1" id="MP3-Tc-roJ"/>
+                                    </constraints>
+                                    <inset key="imageEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                    <state key="normal" title="Close">
+                                        <color key="titleColor" red="0.95294117649999999" green="0.46274509800000002" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="closeSelf:" destination="-1" eventType="touchUpInside" id="Yqp-5J-PyR"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team Meal Boxes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ff-bk-uWj">
+                                    <rect key="frame" x="139" y="17" width="136.5" height="16"/>
+                                    <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="16"/>
+                                    <color key="textColor" red="0.12941176469999999" green="0.12941176469999999" blue="0.12941176469999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Qr-PM-lAq">
+                                    <rect key="frame" x="331" y="7.5" width="75" height="35"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="35" id="Xl9-Ep-ijy"/>
+                                        <constraint firstAttribute="width" constant="75" id="u5i-Gi-JnK"/>
+                                    </constraints>
+                                    <inset key="imageEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
+                                    <state key="normal" image="cloudkitch_logo"/>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="pzX-ZA-OL6" firstAttribute="leading" secondItem="f7y-fi-SBI" secondAttribute="leading" constant="8" id="0qv-Ve-UKJ"/>
+                                <constraint firstItem="8Qr-PM-lAq" firstAttribute="centerY" secondItem="pzX-ZA-OL6" secondAttribute="centerY" id="8LG-su-A0U"/>
+                                <constraint firstItem="1Ff-bk-uWj" firstAttribute="centerY" secondItem="pzX-ZA-OL6" secondAttribute="centerY" id="CcD-hy-5cm"/>
+                                <constraint firstAttribute="height" constant="50" id="HMs-jn-xYT"/>
+                                <constraint firstItem="1Ff-bk-uWj" firstAttribute="centerX" secondItem="f7y-fi-SBI" secondAttribute="centerX" id="hin-92-cRm"/>
+                                <constraint firstItem="pzX-ZA-OL6" firstAttribute="centerY" secondItem="f7y-fi-SBI" secondAttribute="centerY" id="i65-PN-LpG"/>
+                                <constraint firstAttribute="trailing" secondItem="8Qr-PM-lAq" secondAttribute="trailing" constant="8" id="u3C-gb-4kJ"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ten-fN-dqe">
+                            <rect key="frame" x="0.0" y="50" width="414" height="1"/>
+                            <color key="backgroundColor" red="0.85882352939999995" green="0.85882352939999995" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="D5R-Ko-RwW"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="ten-fN-dqe" firstAttribute="top" secondItem="f7y-fi-SBI" secondAttribute="bottom" id="2mO-lt-hdx"/>
+                        <constraint firstAttribute="bottom" secondItem="ten-fN-dqe" secondAttribute="bottom" id="D9t-tt-sXZ"/>
+                        <constraint firstItem="f7y-fi-SBI" firstAttribute="leading" secondItem="ohE-ac-JVZ" secondAttribute="leading" id="RoE-EM-zwY"/>
+                        <constraint firstItem="ten-fN-dqe" firstAttribute="leading" secondItem="ohE-ac-JVZ" secondAttribute="leading" id="TiY-ah-oSF"/>
+                        <constraint firstAttribute="trailing" secondItem="ten-fN-dqe" secondAttribute="trailing" id="jyK-4j-O2u"/>
+                        <constraint firstAttribute="trailing" secondItem="f7y-fi-SBI" secondAttribute="trailing" id="t1b-5y-z4d"/>
+                        <constraint firstItem="f7y-fi-SBI" firstAttribute="top" secondItem="ohE-ac-JVZ" secondAttribute="top" id="yWE-3H-JSK"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QQk-yi-O2t">
+                    <rect key="frame" x="0.0" y="95" width="414" height="767"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Krq-Gn-mCh"/>
+                        <outlet property="delegate" destination="-1" id="T3x-10-bUP"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="QQk-yi-O2t" secondAttribute="trailing" id="Csf-ZE-w7L"/>
+                <constraint firstItem="ohE-ac-JVZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="MbC-OK-Tgt"/>
+                <constraint firstItem="ohE-ac-JVZ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="QnE-8C-HQg"/>
+                <constraint firstItem="QQk-yi-O2t" firstAttribute="top" secondItem="ohE-ac-JVZ" secondAttribute="bottom" id="Tcw-mf-gKJ"/>
+                <constraint firstItem="QQk-yi-O2t" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="gyn-Bf-yqg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="QQk-yi-O2t" secondAttribute="bottom" id="p6i-OD-OpE"/>
+                <constraint firstAttribute="trailing" secondItem="ohE-ac-JVZ" secondAttribute="trailing" id="x8G-QN-mLf"/>
+            </constraints>
+            <point key="canvasLocation" x="8.6956521739130448" y="91.741071428571431"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cloudkitch_logo" width="300" height="137"/>
+    </resources>
+</document>
